@@ -11,6 +11,15 @@
 			0%{ transform:rotate(0deg); }
 			100%{ transform:rotate(-360deg); }
 		}
+		.stock {    
+		    -webkit-filter: blur(10px); /* Chrome, Opera */
+		       -moz-filter: blur(10px);
+		        -ms-filter: blur(10px);    
+		            filter: blur(10px);    
+		}
+		.lrc p {
+			position: relative;
+		}
 	</style>
 </head>
 <body>
@@ -59,13 +68,21 @@
 	<i class="music icon blue" style="font-size: 32px;"></i>
 </div>
 
-<div class="ui right sidebar inverted vertical menu" style="max-width: 200px;color: #fff;text-align: center;padding-top: 25px;">
-	<img class="ui medium circular image" src="http://xuduo.oss-cn-hangzhou.aliyuncs.com/5%7DHM%7BL$ZRH%7DM)%7B3_T%7DZFMA9.png" style="max-width: 150px;margin: 15px auto;-webkit-animation:circle 20s infinite linear;">
-    <p>想起我不完美</p>
-    <p>你会不会</p>
-    <p>逃离我生命的范围</p>
-    <p>想着你的滋味</p>
-    <p>...</p>
+<div class="ui right sidebar inverted vertical menu bg" style="max-width: 200px;color: #fff;text-align: center;padding-top: 25px;">
+	<img class="stock" style="position: absolute; top: 0px; left: 0px; height: 100%; width: 100%;z-index: 1px;" src="http://xuduo.oss-cn-hangzhou.aliyuncs.com/5%7DHM%7BL$ZRH%7DM)%7B3_T%7DZFMA9.png">
+	<div class="ui container lrc">
+		<img class="ui medium circular image" src="http://xuduo.oss-cn-hangzhou.aliyuncs.com/5%7DHM%7BL$ZRH%7DM)%7B3_T%7DZFMA9.png" style="max-width: 150px;margin: 15px auto;-webkit-animation:circle 20s infinite linear;">
+	    <p>想起我不完美</p>
+	    <p>你会不会</p>
+	    <p>逃离我生命的范围</p>
+	    <p>想着你的滋味</p>
+	    <p>...</p>
+	    <div style="width: 100%;position: fixed;bottom: 0;right: 0;padding: 20px 15px 15px 15px;font-size: 24px;">
+	    	<i class="backward icon"></i>
+	    	<i class="pause icon"></i>
+	    	<i class="forward icon"></i>
+   	 	</div>
+	</div>
 </div>
 
 <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
